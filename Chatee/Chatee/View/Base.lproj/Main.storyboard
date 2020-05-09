@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mIL-fo-az5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Chatee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDv-2R-8N8">
+                                <rect key="frame" x="62.5" y="271" width="250" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFE-OG-nTb">
+                                        <rect key="frame" x="0.0" y="75" width="250" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oM0-c4-BeZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K99-aT-uJG" kind="show" id="UUm-nt-zDw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcn-Ft-Phj">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="q0x-gb-2Or"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="93k-jn-PyC" kind="show" id="054-aa-f4F"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pFE-OG-nTb" secondAttribute="trailing" id="Avr-Fb-iOY"/>
+                                    <constraint firstAttribute="bottom" secondItem="pFE-OG-nTb" secondAttribute="bottom" id="BKY-ah-T62"/>
+                                    <constraint firstAttribute="height" constant="125" id="Ung-fv-NrS"/>
+                                    <constraint firstItem="qcn-Ft-Phj" firstAttribute="leading" secondItem="GDv-2R-8N8" secondAttribute="leading" id="c0c-zG-MrX"/>
+                                    <constraint firstItem="pFE-OG-nTb" firstAttribute="leading" secondItem="GDv-2R-8N8" secondAttribute="leading" id="eL4-IG-ttE"/>
+                                    <constraint firstAttribute="trailing" secondItem="qcn-Ft-Phj" secondAttribute="trailing" id="ncV-tq-dJy"/>
+                                    <constraint firstItem="qcn-Ft-Phj" firstAttribute="top" secondItem="GDv-2R-8N8" secondAttribute="top" id="oBZ-D1-zRA"/>
+                                    <constraint firstAttribute="width" constant="250" id="upw-E9-yqY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GDv-2R-8N8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HGb-uC-aSO"/>
+                            <constraint firstItem="GDv-2R-8N8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PuU-Jd-Jho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZTC-uz-YaS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="138.98050974512745"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="ITc-tK-XaH">
+            <objects>
+                <viewController id="K99-aT-uJG" customClass="RegisterViewController" customModule="Chatee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ndm-oH-JJT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIV-l0-QkW">
+                                <rect key="frame" x="62.5" y="248.5" width="250" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyC-Pe-Itm">
+                                        <rect key="frame" x="0.0" y="62" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUs-6z-l7L">
+                                        <rect key="frame" x="0.0" y="4" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S59-Co-qdr">
+                                        <rect key="frame" x="0.0" y="120" width="250" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Xqq-yT-Nln"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="K99-aT-uJG" eventType="touchUpInside" id="74E-ce-EoZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gyC-Pe-Itm" secondAttribute="trailing" id="20s-bO-KN1"/>
+                                    <constraint firstItem="gyC-Pe-Itm" firstAttribute="leading" secondItem="dIV-l0-QkW" secondAttribute="leading" id="22b-Wh-jgD"/>
+                                    <constraint firstAttribute="trailing" secondItem="S59-Co-qdr" secondAttribute="trailing" id="2jX-2x-KVg"/>
+                                    <constraint firstAttribute="trailing" secondItem="DUs-6z-l7L" secondAttribute="trailing" id="Ckz-rg-ASW"/>
+                                    <constraint firstAttribute="height" constant="170" id="ITN-NA-ref"/>
+                                    <constraint firstAttribute="width" constant="250" id="bD1-ym-cmV"/>
+                                    <constraint firstItem="S59-Co-qdr" firstAttribute="leading" secondItem="dIV-l0-QkW" secondAttribute="leading" id="iUg-W4-NnK"/>
+                                    <constraint firstAttribute="bottom" secondItem="S59-Co-qdr" secondAttribute="bottom" id="pyF-U5-XJ6"/>
+                                    <constraint firstItem="S59-Co-qdr" firstAttribute="top" secondItem="gyC-Pe-Itm" secondAttribute="bottom" constant="24" id="raP-ji-Nlg"/>
+                                    <constraint firstItem="gyC-Pe-Itm" firstAttribute="top" secondItem="DUs-6z-l7L" secondAttribute="bottom" constant="24" id="tkg-Jf-aZA"/>
+                                    <constraint firstItem="DUs-6z-l7L" firstAttribute="leading" secondItem="dIV-l0-QkW" secondAttribute="leading" id="vF9-EI-hPd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dIV-l0-QkW" firstAttribute="centerY" secondItem="Ndm-oH-JJT" secondAttribute="centerY" id="Lni-E3-CqX"/>
+                            <constraint firstItem="dIV-l0-QkW" firstAttribute="centerX" secondItem="Ndm-oH-JJT" secondAttribute="centerX" id="ky6-PK-2Ip"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d5G-rg-0pz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QgS-DS-Cxy"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="DUs-6z-l7L" id="77r-52-aZE"/>
+                        <outlet property="passwordTextField" destination="gyC-Pe-Itm" id="LaA-ld-BnA"/>
+                        <segue destination="dMi-bj-ckC" kind="show" identifier="showChat" id="5Eq-Zt-65Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="StF-oE-3yr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072.8000000000002" y="548.27586206896558"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Q9w-UD-iGg">
+            <objects>
+                <viewController id="93k-jn-PyC" customClass="LoginViewController" customModule="Chatee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEa-DS-pBx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfV-Cl-Hck">
+                                <rect key="frame" x="62.5" y="248.5" width="250" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="STa-Ja-NP7">
+                                        <rect key="frame" x="0.0" y="62" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3c4-WB-wLV">
+                                        <rect key="frame" x="0.0" y="4" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvx-ZR-yEl">
+                                        <rect key="frame" x="0.0" y="120" width="250" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="P2y-Un-9Gr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="28"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="93k-jn-PyC" eventType="touchUpInside" id="dk4-Tb-8MT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="STa-Ja-NP7" firstAttribute="leading" secondItem="yfV-Cl-Hck" secondAttribute="leading" id="0Pd-N6-lq9"/>
+                                    <constraint firstItem="3c4-WB-wLV" firstAttribute="leading" secondItem="yfV-Cl-Hck" secondAttribute="leading" id="0lV-Hj-pzh"/>
+                                    <constraint firstItem="uvx-ZR-yEl" firstAttribute="leading" secondItem="yfV-Cl-Hck" secondAttribute="leading" id="9RF-bA-hum"/>
+                                    <constraint firstAttribute="trailing" secondItem="STa-Ja-NP7" secondAttribute="trailing" id="Aur-wQ-G0j"/>
+                                    <constraint firstAttribute="width" constant="250" id="Kig-YY-qKO"/>
+                                    <constraint firstAttribute="trailing" secondItem="3c4-WB-wLV" secondAttribute="trailing" id="VBZ-S7-6fh"/>
+                                    <constraint firstAttribute="bottom" secondItem="uvx-ZR-yEl" secondAttribute="bottom" id="aXq-k2-l2R"/>
+                                    <constraint firstItem="STa-Ja-NP7" firstAttribute="top" secondItem="3c4-WB-wLV" secondAttribute="bottom" constant="24" id="eE2-iY-Dh1"/>
+                                    <constraint firstAttribute="trailing" secondItem="uvx-ZR-yEl" secondAttribute="trailing" id="nAZ-A2-bw3"/>
+                                    <constraint firstItem="uvx-ZR-yEl" firstAttribute="top" secondItem="STa-Ja-NP7" secondAttribute="bottom" constant="24" id="v54-fJ-Ce7"/>
+                                    <constraint firstAttribute="height" constant="170" id="vfP-w2-6ZV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yfV-Cl-Hck" firstAttribute="centerY" secondItem="dEa-DS-pBx" secondAttribute="centerY" id="Yqm-rL-uzd"/>
+                            <constraint firstItem="yfV-Cl-Hck" firstAttribute="centerX" secondItem="dEa-DS-pBx" secondAttribute="centerX" id="g94-ke-v47"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4cY-Mg-Zfv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2dq-GM-jPu"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="3c4-WB-wLV" id="sek-Na-Z3T"/>
+                        <outlet property="passwordTextField" destination="STa-Ja-NP7" id="DRE-Qs-dSx"/>
+                        <segue destination="dMi-bj-ckC" kind="show" identifier="showChat" id="pXC-0E-nh1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgb-Tn-Km4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072.8000000000002" y="-169.56521739130437"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="kX7-RK-o6f">
+            <objects>
+                <viewController id="dMi-bj-ckC" customClass="ChatViewController" customModule="Chatee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v94-IA-rYS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UJD-32-QTc">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5iS-78-dej">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="573"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FFp-Ua-r07">
+                                        <rect key="frame" x="0.0" y="573" width="375" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1op-d2-MhL">
+                                                <rect key="frame" x="8" y="8" width="261" height="34"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-b7-W5X">
+                                                <rect key="frame" x="277" y="8" width="90" height="34"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                <state key="normal" title="Send">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="sendButtonTapped:" destination="dMi-bj-ckC" eventType="touchUpInside" id="LlA-XA-ByO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G8m-9i-WeG"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UJD-32-QTc" firstAttribute="trailing" secondItem="UgS-In-nMU" secondAttribute="trailing" id="5zl-SO-JBs"/>
+                            <constraint firstItem="UJD-32-QTc" firstAttribute="bottom" secondItem="UgS-In-nMU" secondAttribute="bottom" id="6Pl-ck-hlO"/>
+                            <constraint firstItem="UJD-32-QTc" firstAttribute="top" secondItem="UgS-In-nMU" secondAttribute="top" id="OTm-75-4AX"/>
+                            <constraint firstItem="UJD-32-QTc" firstAttribute="leading" secondItem="UgS-In-nMU" secondAttribute="leading" id="Vie-TW-Sa7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UgS-In-nMU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XR2-j7-MRD"/>
+                    <connections>
+                        <outlet property="tableView" destination="5iS-78-dej" id="oas-qm-9V4"/>
+                        <outlet property="textField" destination="1op-d2-MhL" id="TLh-BI-5oV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ddg-xg-hv8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3081" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="srw-xo-Ymf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mIL-fo-az5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aHV-Gn-F5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IdC-DJ-fhS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQe-RR-tzu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pXC-0E-nh1"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Chatee {
+  umbrella header "Pods-Chatee-umbrella.h"
+
+  export *
+  module * { export * }
+}
